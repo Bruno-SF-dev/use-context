@@ -1,0 +1,22 @@
+.container {
+  background-color: rgb(30, 126, 158);
+  border: 1px solid cornflowerblue;
+  width: 500px;
+  padding: 100px 0;
+
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container form {
+  display: flex;
+  gap: 8px;
+}
+
+.container form label {
+  align-self: center;
+  color: aliceblue;
+}
