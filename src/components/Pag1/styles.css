@@ -1,22 +1,50 @@
 .container {
-  background-color: rgb(30, 126, 158);
-  border: 1px solid cornflowerblue;
-  width: 500px;
-  padding: 100px 0;
-
+  background-color: rgba(30, 126, 158, 0.705);
+  border: 1px solid white;
   border-radius: 5px;
+  padding: 20px 75px;
+  height: 200px;
 
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container form {
+  width: 300px;
   display: flex;
+  align-items: center;
   gap: 8px;
+}
+
+.container form .fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container form .fields div {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
 }
 
 .container form label {
   align-self: center;
   color: aliceblue;
+}
+
+.container .buttons {
+  display: flex;
+  width: 300px;
+  margin-top: auto;
+}
+
+.buttons :not(:last-child) {
+  margin-right: auto;
+}
+
+.buttons :last-child {
+  margin-left: auto;
 }

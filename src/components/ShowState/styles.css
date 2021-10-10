@@ -1,0 +1,22 @@
+.state {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 20px 10px;
+
+  background-color: rgba(255, 255, 255, 0.219);
+  color: aliceblue;
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.state span {
+  color: darkslategrey;
+}
