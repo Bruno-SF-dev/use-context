@@ -5,15 +5,22 @@ import ShowState from "./components/ShowState";
 import FormContextProvider from "./contexts/formContext";
 import Routes from "./routes";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./styles/global.css";
+import ErrorsContextProvider from "./contexts/errorsContext";
 
 ReactDOM.render(
   <React.StrictMode>
     <FormContextProvider>
-      <ShowState />
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
+      <ErrorsContextProvider>
+        <ToastContainer position={"top-center"} autoClose={8000} />
+        <ShowState />
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </ErrorsContextProvider>
     </FormContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
